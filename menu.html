@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menu</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <style>
+    html, body {
+      height: 100%;
+    }
+    body {
+      background-color: lightgreen;
+      display: flex;
+      flex-direction: column;
+    }
+    footer {
+      margin-top: auto;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .nav-link {
+      color: black;
+    }
+    .nav-link.active {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+  <!-- Header -->
+  <header class="container py-4">
+    <h1 class="text-center text-dark">Our Menu</h1>
+    <nav>
+      <ul class="nav justify-content-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="menu.html">Menu</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Menu Content -->
+  <div class="container py-4">
+    <h2 class="text-dark">Appetizers</h2>
+    <ul class="list-group mb-4">
+      <li class="list-group-item">Garlic Bread - Crispy and buttery - <strong>$3.99</strong></li>
+      <li class="list-group-item">Bruschetta - Fresh tomatoes and basil - <strong>$4.99</strong></li>
+    </ul>
+
+    <h2 class="text-dark">Main Course</h2>
+    <div class="table-responsive">
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr class="table-dark">
+            <th>Dish</th>
+            <th>Description</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Chicken Burger</td>
+            <td>Juicy grilled chicken with fresh veggies</td>
+            <td>$5.99</td>
+          </tr>
+          <tr>
+            <td>Grilled Salmon</td>
+            <td>Fresh salmon with lemon butter sauce</td>
+            <td>$12.99</td>
+          </tr>
+          <tr>
+            <td>Grilled Chicken Alfredo</td>
+            <td>Creamy fettuccine pasta topped with grilled chicken and parmesan cheese</td>
+            <td>$12.99</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center bg-dark text-white">
+    <p class="mb-0">&copy; 2025 Sehar | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
